@@ -1,0 +1,862 @@
+---
+import BaseLayout from "src/layouts/BaseLayout.astro";
+import CTA from "@components/CTA.astro";
+import FAQ from "@components/FAQ.astro";
+import ReviewsPreview from "@components/ReviewsPreview.astro";
+import ContactForm from "@components/ContactForm.astro";
+import { getCollection } from "astro:content";
+import "@styles/blog.less";
+import GalleryPreview from "@components/GalleryPreview.astro";
+const allServices = await getCollection("services");
+
+export async function getStaticPaths() {
+  const allServices = await getCollection("services");
+
+  return allServices.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<BaseLayout title={`${entry.data.name} Services`}>
+  <!-- ============================================ -->
+  <!--                    Hero                      -->
+  <!-- ============================================ -->
+
+  <section id="hero-82">
+    <div class="cs-container">
+      <h1 class="cs-title">
+        {entry.data.heading}
+      </h1>
+      <a href="/contact" class="cs-button-solid">Get a FREE Quote Today</a>
+    </div>
+
+    <!-- Background Image -->
+    <picture class="cs-background">
+      <source
+        media="(max-width: 600px)"
+        srcset={entry.data.heroImage.mobile}
+      />
+      <source
+        media="(min-width: 601px)"
+        srcset={entry.data.heroImage.desktop}
+      />
+      <img
+        decoding="async"
+        src={entry.data.heroImage.desktop}
+        alt="kitchen"
+        width="2250"
+        height="1500"
+        aria-hidden="true"
+      />
+    </picture>
+  </section>
+
+  <!-- ============================================ -->
+  <!--                 Content Page                 -->
+  <!-- ============================================ -->
+
+  <!-- ============================================ 
+    This Stitch is used for content heavy interior pages
+    that have no design or layout.  Often times these are 
+    content silos where you talk extensively about a topic
+    to educate your visitors and rank on Google for the 
+    content.  These are great for pages that have a TON
+    of content.  Design isn't important here, it's all 
+    about making the content accessible and easy to read.
+================================================= -->
+
+  <section id="content-page-848">
+    <div class="cs-container">
+      <div class="cs-content">
+        <article class="blog-article">
+          <div id="blog-content">
+            <Content />
+            <a href="/contact" class="cs-button-solid">Get In Touch</a>
+          </div>
+        </article>
+      </div>
+      <div class="left-aside">
+        <di class="services-wrapper">
+          <p class="services-heading">More Services</p>
+          {
+            allServices.map((service) => (
+              <div class="service-item">
+                <a class="service-link" href={`/services/${service.slug}`}>
+                  {service.data.name}
+                </a>
+              </div>
+            ))
+          }
+        </di>
+        <!--Top Picture-->
+        <picture class="cs-picture">
+          <!--Mobile Image-->
+          <source
+            media="(max-width: 600px)"
+            srcset={entry.data.asideImage}
+          />
+          <!--Tablet and above Image-->
+          <source
+            media="(min-width: 601px)"
+            srcset={entry.data.asideImage}
+          />
+          <img
+            decoding="async"
+            src={entry.data.asideImage}
+            alt="person"
+            width="542"
+            height="520"
+            aria-hidden="true"
+          />
+        </picture>
+      </div>
+    </div>
+  </section>
+
+  <GalleryPreview />
+  <ReviewsPreview />
+  <CTA />
+  <FAQ />
+  <ContactForm />
+</BaseLayout>
+
+<style lang="less">
+  /*-- -------------------------- -->
+<---           Hero             -->
+<--- -------------------------- -*/
+
+  /* Mobile - 360px */
+  @media only screen and (min-width: 0rem) {
+    #hero-82 {
+      /* Centers button */
+      text-align: center;
+      /* 144px - 300px - leaving extra space for the navigation */
+      padding: clamp(9rem, 25.95vw, 12.75rem) (16/16rem) 0;
+      /* 130px - 200px */
+      padding-bottom: clamp(8.125rem, 12.5vw, 25em);
+      position: relative;
+      z-index: 1;
+
+      .cs-background {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -2;
+
+        &:before {
+          /* Overlay */
+          content: "";
+          width: 100%;
+          height: 100%;
+          background: #000;
+          opacity: 0.7;
+          position: absolute;
+          display: block;
+          top: 0;
+          left: 0;
+          z-index: 1;
+          /* prevents the cursor from interacting with it */
+          pointer-events: none;
+        }
+
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .cs-container {
+        width: 100%;
+        max-width: (1080/16rem);
+        margin: auto;
+      }
+
+      .cs-title {
+        /* 39px - 61px */
+        font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+        font-weight: 700;
+        line-height: 1.2em;
+        text-align: center;
+        max-width: (829/16rem);
+        /* 16px - 24px */
+        margin: 0 auto clamp(1rem, 4vw, 1.5rem);
+        color: #fff;
+        position: relative;
+
+        // &:after {
+          /* Divider Line */
+        //   content: "";
+        //   width: (100/16rem);
+        //   height: (8/16rem);
+        //   /* 16px - 24px */
+        //   margin: clamp(1rem, 4vw, 1.5rem) auto clamp(1rem, 4vw, 1.5rem);
+        //   background: var(--primary);
+        //   opacity: 1;
+        //   position: relative;
+        //   display: block;
+        // }
+      }
+
+      .cs-text {
+        /* 16px - 25px */
+        font-size: clamp(1rem, 1.95vw, 1.5625rem);
+        line-height: 1.5em;
+        text-align: center;
+        width: 100%;
+        /* 464px - 800px */
+        max-width: clamp(29rem, 60vw, 50rem);
+        margin: 0 auto;
+        /* 40px - 48px */
+        margin-bottom: clamp(2.5rem, 4vw, 3rem);
+        color: #fff;
+      }
+
+      .cs-button-solid {
+        font-size: (16/16rem);
+        line-height: (56/16rem);
+        text-decoration: none;
+        font-weight: 700;
+        margin: auto;
+        margin-top: 1rem;
+        color: #fff;
+        padding: 0 (24/16rem);
+        background-color: var(--primary);
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+
+        &:before {
+          content: "";
+          position: absolute;
+          display: block;
+          height: 100%;
+          width: 0%;
+          background: #000;
+          opacity: 1;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          transition: width 0.3s;
+        }
+
+        &:hover {
+          &:before {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  /*-- -------------------------- -->
+<---        Side By Side        -->
+<--- -------------------------- -*/
+
+  /* Mobile - 360px */
+  @media only screen and (min-width: 0rem) {
+    #sbs-1598 {
+      padding: var(--sectionPadding);
+
+      .cs-container {
+        width: 100%;
+        /* changes to 1280px at tablet */
+        max-width: (584/16rem);
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+      }
+
+      .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: left;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: flex-start;
+      }
+
+      .cs-text {
+        margin-bottom: (16/16rem);
+        &:last-of-type {
+          margin-bottom: (32/16rem);
+        }
+      }
+
+      .cs-picture {
+        width: 100%;
+        display: block;
+        position: relative;
+        z-index: 1;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+
+      .cs-picture1 {
+        height: 95vw;
+        max-height: (400/16rem);
+      }
+
+      .cs-picture2 {
+        height: 111vw;
+        max-height: (500/16rem);
+      }
+
+      .cs-stats-group {
+        width: 100%;
+        position: relative;
+      }
+
+      .img-highlight {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: var(--primary);
+        left: 1.5rem;
+        top: 1.5rem;
+      }
+
+      .cs-stats {
+        width: 100%;
+        max-width: (630/16rem);
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        row-gap: (24/16rem);
+        column-gap: (12/16rem);
+      }
+
+      .cs-stat {
+        list-style: none;
+        margin: 0;
+        padding: 0 0 (24/16rem) 0;
+        border-bottom: 1px solid var(--primary);
+        /* making flex so we can align a heading with 1 line to the bottom */
+        display: flex;
+        grid-column: span 4;
+        flex-direction: column;
+        align-self: stretch;
+        align-content: space-between;
+      }
+
+      .cs-number {
+        /* 31px - 39px */
+        font-size: clamp(1.9375rem, 3vw, 2.4375rem);
+        line-height: 1.2em;
+        font-weight: 700;
+        text-align: left;
+        color: var(--headerColor);
+        display: block;
+        margin: 0 0 (4/16rem) 0;
+      }
+
+      .cs-desc {
+        font-size: (16/16rem);
+        line-height: 1.5em;
+        font-weight: 400;
+        text-align: left;
+        /* auto margin top will push text to bottom if there's only one line */
+        margin: 0;
+        color: var(--bodyTextColor);
+      }
+    }
+  }
+
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48rem) {
+    #sbs-1598 {
+      .cs-container {
+        max-width: (1280/16rem);
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+      }
+
+      .cs-picture1 {
+        /* 340px - 460px */
+        min-height: clamp(21.25rem, 35vw, 28.75rem);
+        height: 100%;
+        max-height: 100%;
+      }
+
+      .cs-picture2 {
+        /* 530px - 660px */
+        min-height: clamp(33.125rem, 45vw, 41.25rem);
+        height: 100%;
+        max-height: 100%;
+      }
+    }
+  }
+
+  /*-- -------------------------- -->
+<---   Side By Side Reverse     -->
+<--- -------------------------- -*/
+
+  /* Mobile - 360px */
+  @media only screen and (min-width: 0rem) {
+    #sbsr-1599 {
+      background-color: var(--bodyColorAlt);
+      padding: var(--sectionPadding);
+
+      .cs-container {
+        width: 100%;
+        /* changes to 1280px at tablet */
+        max-width: (584/16rem);
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+      }
+
+      .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: left;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: flex-start;
+      }
+
+      .cs-topper {
+        font-size: var(--topperFontSize);
+        line-height: 1.2em;
+        text-transform: uppercase;
+        text-align: inherit;
+        letter-spacing: 0.1em;
+        font-weight: 700;
+        color: var(--primary);
+        margin-bottom: (4/16rem);
+        display: block;
+      }
+
+      .cs-title {
+        font-size: var(--headerFontSize);
+        font-weight: 900;
+        line-height: 1.2em;
+        text-align: inherit;
+        max-width: (700/16rem);
+        margin: 0 0 (16/16rem) 0;
+        color: var(--headerColor);
+        position: relative;
+      }
+
+      .cs-text {
+        font-size: var(--bodyFontSize);
+        line-height: 1.5em;
+        text-align: inherit;
+        width: 100%;
+        max-width: (650/16rem);
+        margin: 0;
+        color: var(--bodyTextColor);
+      }
+
+      .cs-text {
+        /* Override.  cs-topper cs-title and first cs-text should be removed and put into your global css sheet so it can control every instance of them on your site and is consistent. This selector is a section specific override that stays inside this stitch */
+        margin-bottom: (16/16rem);
+        &:last-of-type {
+          margin-bottom: (32/16rem);
+        }
+      }
+
+      .cs-picture {
+        width: 100%;
+        display: block;
+        position: relative;
+        z-index: 1;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+
+      .cs-picture1 {
+        height: 95vw;
+        max-height: (400/16rem);
+      }
+
+      .cs-picture2 {
+        height: 111vw;
+        max-height: (500/16rem);
+      }
+
+      .cs-stats-group {
+        width: 100%;
+        position: relative;
+      }
+
+      .img-highlight {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: var(--primary);
+        right: 1.5rem;
+        top: 1.5rem;
+      }
+
+      .cs-stats {
+        width: 100%;
+        max-width: (630/16rem);
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        row-gap: (24/16rem);
+        column-gap: (12/16rem);
+      }
+
+      .cs-stat {
+        list-style: none;
+        margin: 0;
+        padding: 0 0 (24/16rem) 0;
+        border-bottom: 1px solid var(--primary);
+        /* making flex so we can align a heading with 1 line to the bottom */
+        display: flex;
+        grid-column: span 4;
+        flex-direction: column;
+        align-self: stretch;
+        align-content: space-between;
+      }
+
+      .cs-number {
+        /* 31px - 39px */
+        font-size: clamp(1.9375rem, 3vw, 2.4375rem);
+        line-height: 1.2em;
+        font-weight: 700;
+        text-align: left;
+        color: var(--headerColor);
+        display: block;
+        margin: 0 0 (4/16rem) 0;
+      }
+
+      .cs-desc {
+        font-size: (16/16rem);
+        line-height: 1.5em;
+        font-weight: 400;
+        text-align: left;
+        /* auto margin top will push text to bottom if there's only one line */
+        margin: 0;
+        color: var(--bodyTextColor);
+      }
+    }
+  }
+
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48rem) {
+    #sbsr-1599 {
+      .cs-container {
+        max-width: (1280/16rem);
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+      }
+
+      .cs-content {
+        /* sends it to the right in the 2nd position */
+        order: 2;
+      }
+
+      .cs-picture1 {
+        /* 340px - 460px */
+        min-height: clamp(21.25rem, 35vw, 28.75rem);
+        height: 100%;
+        max-height: 100%;
+      }
+
+      .cs-picture2 {
+        /* 530px - 660px */
+        min-height: clamp(33.125rem, 45vw, 41.25rem);
+        height: 100%;
+        max-height: 100%;
+      }
+    }
+  }
+  /*-- -------------------------- -->
+<---        Content Page        -->
+<--- -------------------------- -*/
+
+  /* Mobile - 360px */
+  @media only screen and (min-width: 0rem) {
+    #content-page-848 {
+      padding: var(--sectionPadding);
+      background-color: #fff;
+      /* clips the wave background from causing overflow issues when it goes off screen */
+      overflow: hidden;
+      position: relative;
+      z-index: 1;
+      .cs-button-solid {
+        font-size: (16/16rem);
+        line-height: (56/16rem);
+        text-decoration: none;
+        font-weight: 700;
+        margin: auto;
+        margin-top: 1rem;
+        color: #fff;
+        padding: 0 (24/16rem);
+        background-color: var(--primary);
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+
+        &:before {
+          content: "";
+          position: absolute;
+          display: block;
+          height: 100%;
+          width: 0%;
+          background: #000;
+          opacity: 1;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          transition: width 0.3s;
+        }
+
+        &:hover {
+          &:before {
+            width: 100%;
+          }
+        }
+      }
+
+      .cs-container {
+        width: 100%;
+        max-width: (1280/16rem);
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+        position: relative;
+      }
+
+      .services-wrapper {
+        background-color: #f8f8f8;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .services-heading {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem !important;
+        border-bottom: 1px solid gray;
+      }
+
+      .service-item {
+        padding: (8/16rem) 0;
+      }
+
+      .service-link {
+        position: relative;
+        text-decoration: none;
+        font-size: 1.25rem;
+        color: var(--bodyTextColor);
+        transition: all 0.25s;
+        &:before {
+          /* active state underline */
+          content: "";
+          width: 0;
+          height: 1px;
+          background: currentColor;
+          opacity: 1;
+          position: absolute;
+          display: none;
+          bottom: (-2/16rem);
+          left: 0;
+        }
+        &:hover {
+          color: var(--primary);
+          &:before {
+            width: 100%;
+            display: block;
+          }
+        }
+      }
+      .service-link:hover {
+      }
+
+      .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: left;
+        width: 100%;
+        // max-width: (630/16rem);
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: flex-start;
+      }
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-weight: 700;
+        text-align: inherit;
+        margin: 0 0 (16/16rem) 0;
+        color: var(--headerColor);
+      }
+
+      h2 {
+        font-size: (32/16rem);
+        margin-top: (32/16rem);
+      }
+
+      h3 {
+        font-size: (24/16rem);
+        color: var(--primary);
+      }
+
+      h4,
+      h5,
+      h6 {
+        font-size: (20/16rem);
+      }
+
+      .cs-button-solid {
+        margin-bottom: (32/16rem);
+      }
+
+      .cs-no-margin {
+        margin: 0;
+      }
+
+      .cs-color {
+        color: var(--primary);
+      }
+
+      p {
+        font-size: var(--bodyFontSize);
+        line-height: 1.5em;
+        text-align: inherit;
+        width: 100%;
+        margin: 0 0 (16/16rem) 0;
+        color: var(--bodyTextColor);
+        &:last-of-type {
+          margin-bottom: (32/16rem);
+        }
+
+        a {
+          font-size: inherit;
+          line-height: inherit;
+          text-decoration: underline;
+          color: var(--primary);
+        }
+      }
+
+      ol,
+      ul {
+        padding-left: (24/16rem);
+        margin: 0 0 (32/16rem) 0;
+        color: var(--bodyTextColor);
+        display: flex;
+        flex-direction: column;
+        gap: (16/16rem);
+      }
+
+      ul {
+        li {
+          list-style: none;
+          color: inherit;
+          position: relative;
+
+          &:before {
+            /* custom list bullet */
+            content: "";
+            width: 3px;
+            height: 3px;
+            background: currentColor;
+            opacity: 1;
+            border-radius: 50%;
+            position: absolute;
+            display: block;
+            top: (10/16rem);
+            left: (-12/16rem);
+          }
+        }
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .left-aside {
+        width: 100%;
+        position: relative;
+        flex-direction: column;
+        gap: (20/16rem);
+      }
+
+      .cs-picture {
+        width: 100%;
+        height: clamp(18.75rem, 40vw, 32.5rem);
+        box-shadow: 0px 3.3478px 50.2169px rgba(0, 0, 0, 0.16);
+        box-sizing: border-box;
+        overflow: hidden;
+        display: block;
+        position: relative;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48rem) {
+    #content-page-848 {
+      .cs-container {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+      }
+
+      .cs-content {
+        flex: none;
+        width: 75%;
+        /* sends it to the left in the 2nd position */
+        order: 2;
+      }
+
+      .left-aside {
+        display: flex;
+      }
+    }
+  }
+</style>

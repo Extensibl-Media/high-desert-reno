@@ -1,16 +1,1228 @@
 ---
-
+import BaseLayout from "src/layouts/BaseLayout.astro";
+import Hero from "@components/Home/Hero.astro";
+import GalleryPreview from "@components/GalleryPreview.astro";
+import CTA from "@components/CTA.astro";
+import FAQ from "@components/FAQ.astro";
+import ContactForm from "@components/ContactForm.astro";
+import ReviewsPreview from "@components/ReviewsPreview.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout
+  title="Handyman and Renovation services in the Treasure Valley"
+  preloadImg="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1716325573/Kitchen_Interior_Francesca_Tosolini_1_goigsz.jpg"
+>
+  <Hero />
+  <!-- ============================================ -->
+  <!--                Side By Side                  -->
+  <!-- ============================================ -->
+
+  <section id="sbs-1598">
+    <div class="cs-container">
+      <div class="cs-content">
+        <span class="cs-topper">Trusted in the Treasure Valley</span>
+        <h2 class="cs-title">
+          Bringing Your Dream Home to Life With Quality Craftmanship
+        </h2>
+        <p class="cs-text">
+          At High Desert Renovations, we understand that your home is your
+          sanctuary. With years of experience serving the Treasure Valley, our
+          team of skilled professionals is dedicated to delivering top-notch
+          renovation services that exceed your expectations. From kitchen
+          remodels to bathroom upgrades, we handle every project with meticulous
+          attention to detail and a commitment to quality.
+        </p>
+        <p class="cs-text">
+          Whether you're looking to update your kitchen or bathroom, or
+          undertake a full home renovation, we work closely with you to bring
+          your vision to life. Our reputation in the Treasure Valley and
+          surrounding areas speaks for itself, with countless satisfied clients
+          who trust us to transform their homes. Experience the difference that
+          expert craftsmanship and personalized service can make.
+        </p>
+        <picture class="cs-picture cs-picture1">
+          <!--Mobile Image-->
+          <source
+            media="(max-width: 600px)"
+            srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1716327183/Heart_Frames_webp_yudgnn.webp"
+          />
+          <!--Tablet and above Image-->
+          <source
+            media="(min-width: 601px)"
+            srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1716327183/Heart_Frames_webp_yudgnn.webp"
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1716327183/Heart_Frames_webp_yudgnn.webp"
+            alt="people"
+            width="608"
+            height="406"
+          />
+        </picture>
+      </div>
+      <div class="cs-stats-group">
+        <div class="img-highlight"></div>
+        <picture class="cs-picture cs-picture2">
+          <!--Mobile Image-->
+          <source
+            media="(max-width: 600px)"
+            srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1716325557/Brown_Bar_Chairs_bx4onm.jpg"
+          />
+          <!--Tablet and above Image-->
+          <source
+            media="(min-width: 601px)"
+            srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1716325557/Brown_Bar_Chairs_bx4onm.jpg"
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1716325557/Brown_Bar_Chairs_bx4onm.jpg"
+            alt="people"
+            width="608"
+            height="662"
+          />
+        </picture>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!--            Side By Side Reverse              -->
+  <!-- ============================================ -->
+
+  <section id="sbsr-1599">
+    <div class="cs-container">
+      <div class="cs-content">
+        <span class="cs-topper">Comprehensive Contracting Services</span>
+        <h2 class="cs-title">
+          Expert General Contracting and Framing Solutions
+        </h2>
+        <p class="cs-text">
+          We offer a wide range of general contracting services to meet all your
+          home improvement needs. Our team is equipped to handle every aspect of
+          your project, from initial planning and design to final construction.
+          We pride ourselves on delivering projects on time and within budget,
+          ensuring a seamless experience for our clients in the Treasure Valley
+          and beyond.
+        </p>
+        <p class="cs-text">
+          Our framing services are second to none, providing the solid
+          foundation your home needs for lasting durability and structural
+          integrity. Whether you’re building a new addition, renovating an
+          existing space, or constructing your dream home from the ground up,
+          our expert framers use only the highest quality materials and
+          techniques. Trust High Desert Renovations for reliable, professional
+          contracting services in Caldwell, Nampa, Meridian, Star, Kuna, Boise,
+          Emmett, and Garden City.
+        </p>
+        <picture class="cs-picture cs-picture1">
+          <!--Mobile Image-->
+          <source
+            media="(max-width: 600px)"
+            srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1716325574/Remodeling_Pictures_56437138_eyjagc.jpg"
+          />
+          <!--Tablet and above Image-->
+          <source
+            media="(min-width: 601px)"
+            srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1716325574/Remodeling_Pictures_56437138_eyjagc.jpg"
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1716325574/Remodeling_Pictures_56437138_eyjagc.jpg"
+            alt="people"
+            width="608"
+            height="406"
+          />
+        </picture>
+      </div>
+      <div class="cs-stats-group">
+        <div class="img-highlight"></div>
+
+        <picture class="cs-picture cs-picture2">
+          <!--Mobile Image-->
+          <source
+            media="(max-width: 600px)"
+            srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1716325574/Remodeling_Pictures_Joseph_Sharp_1_u5mtbw.jpg"
+          />
+          <!--Tablet and above Image-->
+          <source
+            media="(min-width: 601px)"
+            srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1716325574/Remodeling_Pictures_Joseph_Sharp_1_u5mtbw.jpg"
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1716325574/Remodeling_Pictures_Joseph_Sharp_1_u5mtbw.jpg"
+            alt="people"
+            width="608"
+            height="662"
+          />
+        </picture>
+      </div>
+    </div>
+  </section>
+  <!-- ============================================ -->
+  <!--                 Why Choose                   -->
+  <!-- ============================================ -->
+
+  <section id="why-choose-1371">
+    <div class="cs-container">
+      <div class="cs-content">
+        <span class="cs-topper">Why Choose Us</span>
+        <h2 class="cs-title">Your Trusted Partner in Home Renovation</h2>
+        <p class="cs-text">
+          Quality, Integrity, and Customer Satisfaction are at the core of what
+          we offer. Your home is in great hands with High Desert Renovations.
+        </p>
+      </div>
+      <ul class="cs-card-group">
+        <li class="cs-item">
+          <h3 class="cs-h3">
+            <!-- <img
+                            class="cs-h3-icon"
+                            aria-hidden="true"
+                            loading="lazy"
+                            decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/why1.svg"
+                            alt="icon"
+                            width="24"
+                            height="24"
+                        /> -->
+            Experienced Professionals
+          </h3>
+          <p class="cs-item-text">
+            Our team brings years of experience and craftsmanship to every
+            project.
+          </p>
+        </li>
+        <li class="cs-item">
+          <h3 class="cs-h3">
+            <!-- <img
+                            class="cs-h3-icon"
+                            aria-hidden="true"
+                            loading="lazy"
+                            decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/why2.svg"
+                            alt="icon"
+                            width="24"
+                            height="24"
+                        /> -->
+            Quality Craftsmanship
+          </h3>
+          <p class="cs-item-text">
+            We stay true to your vision and use only quality materials to ensure
+            superior results
+          </p>
+        </li>
+        <li class="cs-item">
+          <h3 class="cs-h3">
+            <!-- <img
+                            class="cs-h3-icon"
+                            aria-hidden="true"
+                            loading="lazy"
+                            decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/why3.svg"
+                            alt="icon"
+                            width="24"
+                            height="24"
+                        /> -->
+            Customer-Centric Approach
+          </h3>
+          <p class="cs-item-text">
+            Your satisfaction is our top priority, and we work closely with you
+            at every step.
+          </p>
+        </li>
+        <li class="cs-item-picture">
+          <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1716328348/Circular_saw_carpenter_thijru.webp"
+            />
+            <!--Tablet and above Image-->
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1716328348/Circular_saw_carpenter_thijru.webp"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1716328348/Circular_saw_carpenter_thijru.webp"
+              alt="people"
+              width="590"
+              height="418"
+            />
+          </picture>
+        </li>
+        <li class="cs-item">
+          <h3 class="cs-h3">
+            <!-- <img
+                            class="cs-h3-icon"
+                            aria-hidden="true"
+                            loading="lazy"
+                            decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/why4.svg"
+                            alt="icon"
+                            width="24"
+                            height="24"
+                        /> -->
+            Transparent Pricing
+          </h3>
+          <p class="cs-item-text">
+            We provide clear, upfront pricing with no hidden fees or surprises.
+          </p>
+        </li>
+        <li class="cs-item">
+          <h3 class="cs-h3">
+            <!-- <img
+                            class="cs-h3-icon"
+                            aria-hidden="true"
+                            loading="lazy"
+                            decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/why5.svg"
+                            alt="icon"
+                            width="24"
+                            height="24"
+                        /> -->
+            Timely Completion
+          </h3>
+          <p class="cs-item-text">
+            We adhere to strict timelines to ensure your project is completed on
+            schedule.
+          </p>
+        </li>
+        <li class="cs-item">
+          <h3 class="cs-h3">
+            <!-- <img
+                            class="cs-h3-icon"
+                            aria-hidden="true"
+                            loading="lazy"
+                            decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/why6.svg"
+                            alt="icon"
+                            width="24"
+                            height="24"
+                        /> -->
+            Local Experts
+          </h3>
+          <p class="cs-item-text">
+            Proudly serving the Treasure Valley with a deep understanding of the
+            local community.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!--                  Content                     -->
+  <!-- ============================================ -->
+
+  <!-- <section id="content-1637">
+        <div class="cs-container">
+            <div class="cs-content">
+                <div class="cs-flex">
+                    <span class="cs-topper">About Us</span>
+                    <h2 class="cs-title">
+                        Marketing strategies & campaigns that will prioritize &
+                        maximize company profits.
+                    </h2>
+                </div>
+                <div class="cs-flex">
+                    <h3 class="cs-h3">
+                        Revolutionize your business, exceedyour goals Partner
+                        with Smartaxdynamic consulting firm.
+                    </h3>
+                    <p class="cs-text">
+                        Aqestic recusandae laudantium optio amet a quisquam
+                        saepe aliquid, voluptate praesentium dicta fuga dolor
+                        error perspiciatis voluptatem eum cupiditate totam
+                        reiciendis quam minus inventore sint rem impedit esse
+                        quasi Tenetur sed reprehenderit earum a magni aliquid
+                        blanditiis dolores, veritatis soluta autem beatae
+                        officia expedita ipsum rerum doloribus sit provident
+                        delectus.
+                    </p>
+                    <a href="" class="cs-button-solid">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+  <ReviewsPreview />
+
+  <!-- ============================================ -->
+  <!--                  Gallery                     -->
+  <!-- ============================================ -->
+  <GalleryPreview />
+
+  <CTA />
+  <FAQ />
+  <ContactForm />
+</BaseLayout>
+
+<style lang="less">
+  /*-- -------------------------- -->
+<---          Content           -->
+<--- -------------------------- -*/
+
+  /* Mobile - 360px */
+  @media only screen and (min-width: 0rem) {
+    #content-1637 {
+      padding: var(--sectionPadding);
+      background-color: black;
+      position: relative;
+      z-index: 1;
+
+      .cs-container {
+        width: 100%;
+        max-width: (1280/16rem);
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 100px */
+        gap: clamp(3rem, 9vw, 6.25rem);
+      }
+
+      .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: left;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: flex-start;
+      }
+
+      .cs-flex {
+        max-width: (608/16rem);
+      }
+
+      .cs-title {
+        color: var(--bodyTextColorWhite);
+      }
+
+      .cs-topper {
+        color: var(--primary);
+      }
+
+      .cs-h3 {
+        font-size: (20/16rem);
+        line-height: 1.2em;
+        font-weight: 700;
+        margin: 0 0 (16/16rem) 0;
+        color: var(--bodyTextColorWhite);
+      }
+
+      .cs-text {
+        margin-bottom: (16/16rem);
+        opacity: 0.8;
+        color: var(--bodyTextColorWhite);
+
+        &:last-of-type {
+          margin-bottom: (32/16rem);
+        }
+      }
+
+      .cs-button-solid {
+        font-size: (16/16rem);
+        /* 46px - 56px */
+        line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+        text-decoration: none;
+        font-weight: 700;
+        text-align: center;
+        margin: 0;
+        color: #fff;
+        min-width: (150/16rem);
+        padding: 0 (24/16rem);
+        background-color: var(--primary);
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        /* prevents padding from adding to the width */
+        box-sizing: border-box;
+
+        &:before {
+          content: "";
+          position: absolute;
+          height: 100%;
+          width: 0%;
+          background: #000;
+          opacity: 1;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          transition: width 0.3s;
+        }
+
+        &:hover {
+          &:before {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48rem) {
+    #content-1637 {
+      &:before {
+        height: 63%;
+      }
+      .cs-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: (40/16rem);
+      }
+
+      .cs-flex {
+        width: 50%;
+        text-align: left;
+        max-width: (608/16rem);
+      }
+
+      .cs-title {
+        margin: 0;
+      }
+    }
+  }
+
+  /*-- -------------------------- -->
+<---        Side By Side        -->
+<--- -------------------------- -*/
+
+  /* Mobile - 360px */
+  @media only screen and (min-width: 0rem) {
+    #sbs-1598 {
+      padding: var(--sectionPadding);
+      padding-top: clamp(12.5rem, 31.95vw, 18.75rem);
+
+      .cs-container {
+        width: 100%;
+        /* changes to 1280px at tablet */
+        max-width: (584/16rem);
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+      }
+
+      .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: left;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: flex-start;
+      }
+
+      .cs-text {
+        margin-bottom: (16/16rem);
+        &:last-of-type {
+          margin-bottom: (32/16rem);
+        }
+      }
+
+      .cs-picture {
+        width: 100%;
+        display: block;
+        position: relative;
+        z-index: 1;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+
+      .cs-picture1 {
+        height: 95vw;
+        max-height: (400/16rem);
+      }
+
+      .cs-picture2 {
+        height: 111vw;
+        max-height: (500/16rem);
+      }
+
+      .cs-stats-group {
+        width: 100%;
+        position: relative;
+      }
+
+      .img-highlight {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: var(--primary);
+        left: 1.5rem;
+        top: 1.5rem;
+      }
+
+      .cs-stats {
+        width: 100%;
+        max-width: (630/16rem);
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        row-gap: (24/16rem);
+        column-gap: (12/16rem);
+      }
+
+      .cs-stat {
+        list-style: none;
+        margin: 0;
+        padding: 0 0 (24/16rem) 0;
+        border-bottom: 1px solid var(--primary);
+        /* making flex so we can align a heading with 1 line to the bottom */
+        display: flex;
+        grid-column: span 4;
+        flex-direction: column;
+        align-self: stretch;
+        align-content: space-between;
+      }
+
+      .cs-number {
+        /* 31px - 39px */
+        font-size: clamp(1.9375rem, 3vw, 2.4375rem);
+        line-height: 1.2em;
+        font-weight: 700;
+        text-align: left;
+        color: var(--headerColor);
+        display: block;
+        margin: 0 0 (4/16rem) 0;
+      }
+
+      .cs-desc {
+        font-size: (16/16rem);
+        line-height: 1.5em;
+        font-weight: 400;
+        text-align: left;
+        /* auto margin top will push text to bottom if there's only one line */
+        margin: 0;
+        color: var(--bodyTextColor);
+      }
+    }
+  }
+
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48rem) {
+    #sbs-1598 {
+      .cs-container {
+        max-width: (1280/16rem);
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+      }
+
+      .cs-picture1 {
+        /* 340px - 460px */
+        min-height: clamp(21.25rem, 35vw, 28.75rem);
+        height: 100%;
+        max-height: 100%;
+      }
+
+      .cs-picture2 {
+        /* 530px - 660px */
+        min-height: clamp(33.125rem, 45vw, 41.25rem);
+        height: 100%;
+        max-height: 100%;
+      }
+    }
+  }
+
+  /*-- -------------------------- -->
+<---   Side By Side Reverse     -->
+<--- -------------------------- -*/
+
+  /* Mobile - 360px */
+  @media only screen and (min-width: 0rem) {
+    #sbsr-1599 {
+      background-color: var(--bodyColorAlt);
+      padding: var(--sectionPadding);
+
+      .cs-container {
+        width: 100%;
+        /* changes to 1280px at tablet */
+        max-width: (584/16rem);
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+      }
+
+      .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: left;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: flex-start;
+      }
+
+      .cs-topper {
+        font-size: var(--topperFontSize);
+        line-height: 1.2em;
+        text-transform: uppercase;
+        text-align: inherit;
+        letter-spacing: 0.1em;
+        font-weight: 700;
+        color: var(--primary);
+        margin-bottom: (4/16rem);
+        display: block;
+      }
+
+      .cs-title {
+        font-size: var(--headerFontSize);
+        font-weight: 900;
+        line-height: 1.2em;
+        text-align: inherit;
+        max-width: (700/16rem);
+        margin: 0 0 (16/16rem) 0;
+        color: var(--headerColor);
+        position: relative;
+      }
+
+      .cs-text {
+        font-size: var(--bodyFontSize);
+        line-height: 1.5em;
+        text-align: inherit;
+        width: 100%;
+        max-width: (650/16rem);
+        margin: 0;
+        color: var(--bodyTextColor);
+      }
+
+      .cs-text {
+        /* Override.  cs-topper cs-title and first cs-text should be removed and put into your global css sheet so it can control every instance of them on your site and is consistent. This selector is a section specific override that stays inside this stitch */
+        margin-bottom: (16/16rem);
+        &:last-of-type {
+          margin-bottom: (32/16rem);
+        }
+      }
+
+      .cs-picture {
+        width: 100%;
+        display: block;
+        position: relative;
+        z-index: 1;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+
+      .cs-picture1 {
+        height: 95vw;
+        max-height: (400/16rem);
+      }
+
+      .cs-picture2 {
+        height: 111vw;
+        max-height: (500/16rem);
+      }
+
+      .cs-stats-group {
+        width: 100%;
+        position: relative;
+      }
+
+      .img-highlight {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: var(--primary);
+        right: 1.5rem;
+        top: 1.5rem;
+      }
+
+      .cs-stats {
+        width: 100%;
+        max-width: (630/16rem);
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        row-gap: (24/16rem);
+        column-gap: (12/16rem);
+      }
+
+      .cs-stat {
+        list-style: none;
+        margin: 0;
+        padding: 0 0 (24/16rem) 0;
+        border-bottom: 1px solid var(--primary);
+        /* making flex so we can align a heading with 1 line to the bottom */
+        display: flex;
+        grid-column: span 4;
+        flex-direction: column;
+        align-self: stretch;
+        align-content: space-between;
+      }
+
+      .cs-number {
+        /* 31px - 39px */
+        font-size: clamp(1.9375rem, 3vw, 2.4375rem);
+        line-height: 1.2em;
+        font-weight: 700;
+        text-align: left;
+        color: var(--headerColor);
+        display: block;
+        margin: 0 0 (4/16rem) 0;
+      }
+
+      .cs-desc {
+        font-size: (16/16rem);
+        line-height: 1.5em;
+        font-weight: 400;
+        text-align: left;
+        /* auto margin top will push text to bottom if there's only one line */
+        margin: 0;
+        color: var(--bodyTextColor);
+      }
+    }
+  }
+
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48rem) {
+    #sbsr-1599 {
+      .cs-container {
+        max-width: (1280/16rem);
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+      }
+
+      .cs-content {
+        /* sends it to the right in the 2nd position */
+        order: 2;
+      }
+
+      .cs-picture1 {
+        /* 340px - 460px */
+        min-height: clamp(21.25rem, 35vw, 28.75rem);
+        height: 100%;
+        max-height: 100%;
+      }
+
+      .cs-picture2 {
+        /* 530px - 660px */
+        min-height: clamp(33.125rem, 45vw, 41.25rem);
+        height: 100%;
+        max-height: 100%;
+      }
+    }
+  }
+
+  /*-- -------------------------- -->
+<---        Why Choose          -->
+<--- -------------------------- -*/
+
+  /* Mobile - 360px */
+  @media only screen and (min-width: 0rem) {
+    @keyframes floatAnimation {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-2rem);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes floatAnimation2 {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-3rem);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    #why-choose-1371 {
+      padding: var(--sectionPadding);
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+
+      .cs-container {
+        width: 100%;
+        max-width: (1280/16rem);
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+      }
+
+      .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: center;
+      }
+
+      .cs-title {
+        max-width: 23ch;
+      }
+
+      .cs-text {
+        max-width: (840/16rem);
+        margin-bottom: (16/16rem);
+        &:last-of-type {
+          margin-bottom: (0/16rem);
+        }
+
+        strong {
+          color: var(--headerColor);
+        }
+      }
+
+      .cs-item-picture {
+        list-style: none;
+        width: 100%;
+        grid-column: span 12;
+        position: relative;
+      }
+
+      .cs-picture {
+        width: 100%;
+        height: (418/16rem);
+        overflow: hidden;
+        display: block;
+        position: relative;
+        z-index: 1;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+
+      .cs-card-group {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        align-items: stretch6;
+        gap: clamp(1rem, 2vw, 1.25rem);
+      }
+
+      .cs-item {
+        list-style: none;
+        /* 16px - 24px */
+        padding: clamp(1rem, 3vw, 1rem);
+        /* prevents padding from affecting height and width */
+        box-sizing: border-box;
+        background-color: #f7f7f7;
+        /* border-radius: (16/16rem); */
+        border: 1px solid #e8e8e8;
+        display: flex;
+        grid-column: span 12;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: (12/16rem);
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: var(--primary);
+
+          .cs-h3,
+          .cs-item-text {
+            color: var(--bodyTextColorWhite);
+          }
+
+          .cs-item-text {
+            opacity: 0.8;
+          }
+
+          .cs-h3-icon {
+            filter: grayscale(1) brightness(1000%);
+          }
+        }
+      }
+
+      .cs-h3 {
+        font-size: (20/16rem);
+        line-height: 1.2em;
+        font-weight: 700;
+        margin: 0;
+        color: var(--headerColor);
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: (8/16rem);
+        transition: color 0.3s;
+      }
+
+      .cs-h3-icon {
+        width: (24/16rem);
+        height: auto;
+        margin-top: 2px;
+        display: block;
+      }
+
+      .cs-item-text {
+        font-size: (14/16rem);
+        line-height: 1.5em;
+        margin: 0;
+        color: var(--bodyTextColor);
+        transition:
+          color 0.3s,
+          opacity 0.3s;
+      }
+
+      .cs-button-solid {
+        font-size: (16/16rem);
+        line-height: (56/16rem);
+        text-decoration: none;
+        font-weight: 700;
+        overflow: hidden;
+        margin: 0;
+        color: #fff;
+        padding: 0 (24/16rem);
+        background-color: var(--primary);
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        transition: color 0.3s;
+
+        &:before {
+          content: "";
+          position: absolute;
+          display: block;
+          height: 100%;
+          width: 0%;
+          background: #1a1a1a;
+          opacity: 1;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          transition: width 0.3s;
+        }
+
+        &:hover {
+          /* color: var(--primary); */
+          &:before {
+            width: 100%;
+          }
+        }
+      }
+
+      .cs-bubbles1 {
+        width: (419/16rem);
+        height: (427/16rem);
+        position: absolute;
+        left: (-260/16rem);
+        top: (-240/16rem);
+        z-index: -1;
+
+        &:before {
+          /* white border bubble */
+          content: "";
+          width: (330/16rem);
+          height: (330/16rem);
+          background: transparent;
+          border: 1px solid #1a1a1a;
+          border-radius: 50%;
+          opacity: 1;
+          position: absolute;
+          display: block;
+          top: 0;
+          left: 0;
+          animation-name: floatAnimation;
+          animation-duration: 5s;
+          animation-timing-function: ease-in-out;
+          animation-fill-mode: forwards;
+          animation-iteration-count: infinite;
+        }
+
+        &:after {
+          /* orange bubble */
+          content: "";
+          width: (260/16rem);
+          height: (260/16rem);
+          background: var(--primary);
+          opacity: 0.1;
+          border-radius: 50%;
+          display: block;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          z-index: -1;
+          animation-name: floatAnimation2;
+          animation-duration: 14s;
+          animation-timing-function: ease-in-out;
+          animation-fill-mode: forwards;
+          animation-iteration-count: infinite;
+        }
+      }
+
+      .cs-bubbles2 {
+        width: (419/16rem);
+        height: (427/16rem);
+        display: block;
+        position: absolute;
+        /* changes to 160px at larger desktop */
+        right: (-180/16rem);
+        bottom: (-140/16rem);
+        z-index: -1;
+
+        &:before {
+          /* white border bubble */
+          content: "";
+          width: (330/16rem);
+          height: (330/16rem);
+          background: transparent;
+          border: 1px solid #1a1a1a;
+          border-radius: 50%;
+          opacity: 1;
+          position: absolute;
+          display: block;
+          top: 0;
+          right: 0;
+          animation-name: floatAnimation;
+          animation-duration: 7s;
+          animation-timing-function: ease-in-out;
+          animation-fill-mode: forwards;
+          animation-iteration-count: infinite;
+        }
+
+        &:after {
+          /* orange bubble */
+          content: "";
+          width: (260/16rem);
+          height: (260/16rem);
+          background: var(--primary);
+          opacity: 0.1;
+          border-radius: 50%;
+          display: block;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          z-index: -1;
+          animation-name: floatAnimation2;
+          animation-duration: 9s;
+          animation-timing-function: ease-in-out;
+          animation-fill-mode: forwards;
+          animation-iteration-count: infinite;
+        }
+      }
+    }
+  }
+
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48rem) {
+    #why-choose-1371 {
+      .cs-item {
+        grid-column: span 4;
+      }
+    }
+  }
+
+  /* Small Desktop - 1024px */
+  @media only screen and (min-width: 64rem) {
+    #why-choose-1371 {
+      .cs-item-picture {
+        grid-column: 4 / span 6;
+        grid-row: 1 / span 3;
+      }
+
+      .cs-picture {
+        height: 100%;
+      }
+
+      .cs-item {
+        grid-column: span 2;
+
+        &:nth-of-type(1) {
+          grid-column: 1 / span 3;
+          grid-row: 1 / span 1;
+        }
+
+        &:nth-of-type(2) {
+          grid-column: 1 / span 3;
+          grid-row: 2 / span 1;
+        }
+
+        &:nth-of-type(3) {
+          grid-column: 1 / span 3;
+          grid-row: 3 / span 1;
+        }
+
+        &:nth-of-type(5) {
+          grid-column: 10 / span 3;
+          grid-row: 1 / span 1;
+        }
+
+        &:nth-of-type(6) {
+          grid-column: 10 / span 3;
+          grid-row: 2 / span 1;
+        }
+
+        &:nth-of-type(7) {
+          grid-column: 10 / span 3;
+          grid-row: 3 / span 1;
+        }
+      }
+
+      .cs-bubbles1 {
+        left: (-130/16rem);
+        top: (-150/16rem);
+      }
+    }
+  }
+
+  /* Large Desktop 1600px */
+  @media only screen and (min-width: 100rem) {
+    #why-choose-1371 {
+      .cs-bubbles1 {
+        margin-right: (650/16rem);
+        left: auto;
+        right: 50%;
+      }
+
+      .cs-bubbles2 {
+        margin-left: (600/16rem);
+        left: 50%;
+        right: auto;
+      }
+    }
+  }
+</style>

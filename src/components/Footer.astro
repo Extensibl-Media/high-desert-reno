@@ -1,0 +1,410 @@
+---
+import client from "@data/clientData.json";
+import { getCollection } from "astro:content";
+const allServices = await getCollection("services");
+---
+
+<!-- ============================================ --><!--                   Footer                     --><!-- ============================================ -->
+<footer id="cs-footer-1782">
+  <div class="cs-container">
+    <!-- Logo Group -->
+    <div class="cs-logo-group">
+      <a aria-label="go back to home" class="cs-logo" href="/">
+        <img
+          class="cs-logo-img"
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          src="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1715740867/hdr-logo-white_nipcwf.svg"
+          alt="logo"
+          width="150"
+        />
+      </a>
+      <p class="cs-text">
+        Welcome to Stitch Fitness! We believe that true wellness encompasses the
+        mind, body & soul. We are here to support and guide you every step of
+        the way.
+      </p>
+      <div class="cs-contact">
+        <div class="cs-contact-info">
+          <span class="cs-topper">Call us anytime</span>
+          <a href={`tel:${client.phoneForTel}`} class="cs-contact-link"
+            >{client.phoneFormatted}</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- Links -->
+    <div class="cs-ul-wrapper">
+      <span class="cs-header">Our Services</span>
+      <ul class="cs-ul">
+        {
+          allServices.map((service) => (
+            <li class="cs-li">
+              <a href={`/services/${service.slug}`} class="cs-link">
+                {service.data.name}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    <div class="cs-ul-wrapper">
+      <span class="cs-header">Useful Links</span>
+      <ul class="cs-ul">
+        <li class="cs-li">
+          <a class="cs-link" href="/about-us">About Us</a>
+        </li>
+        <li class="cs-li">
+          <a class="cs-link" href="/contact">Get a FREE Quote</a>
+        </li>
+        <li class="cs-li">
+          <a class="cs-link" href="/services">Our Services</a>
+        </li>
+        <li class="cs-li">
+          <a class="cs-link" href="/faq">FAQs</a>
+        </li>
+        <li class="cs-li">
+          <a class="cs-link" href="#">Job Openings</a>
+        </li>
+      </ul>
+    </div>
+    <table class="cs-table">
+      <tbody>
+        <tr>
+          <th scope="row">Monday</th>
+          <td>8:00am - 5:00pm</td>
+        </tr>
+        <tr>
+          <th scope="row">Tuesday</th>
+          <td>8:00am - 5:00pm</td>
+        </tr>
+        <tr>
+          <th scope="row">Wednesday</th>
+          <td>8:00am - 5:00pm</td>
+        </tr>
+        <tr>
+          <th scope="row">Thursday</th>
+          <td>8:00am - 5:00pm</td>
+        </tr>
+        <tr>
+          <th scope="row">Friday</th>
+          <td>8:00am - 5:00pm</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="cs-bottom">
+    <span class="cs-credit">
+      © Copyright 2023 - <a href="/" class="cs-credit-link" target="_blank"
+        >High Desert Renovation</a
+      > - Site by <a
+        href="https://www.velocitywebstudio.com"
+        class="cs-credit-link"
+        target="_blank">Velocity Web Studio</a
+      >
+    </span>
+    <!-- <div class="cs-bottom-links">
+      <a href="#" class="cs-bottom-link">Terms & Conditions</a>
+      <a href="#" class="cs-bottom-link">Privacy Policy</a>
+    </div> -->
+  </div>
+</footer>
+
+<style lang="less">
+  /*-- -------------------------- -->
+<---          Footer            -->
+<--- -------------------------- -*/
+
+  /* Mobile - 360px */
+  @media only screen and (min-width: 0rem) {
+    #cs-footer-1782 {
+      padding: var(--sectionPadding);
+      /* 30px - 50px */
+      padding-bottom: clamp(1.875rem, 5vw, 3.125rem);
+      background-color: #222222;
+
+      .cs-container {
+        width: 100%;
+        /* reset on tablet */
+        max-width: (550/16rem);
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        /* 32px - 48px */
+        gap: clamp(2rem, 7vw, 3rem);
+      }
+
+      .cs-logo-group {
+        /* takes up all the space, lets the other ul's wrap below it */
+        width: 100%;
+        position: relative;
+      }
+
+      .cs-logo {
+        width: (150/16rem);
+        height: auto;
+        margin: 0 0 (16/16rem) 0;
+        display: block;
+      }
+
+      .cs-text {
+        max-width: (704/16rem);
+        /* 24px - 40px */
+        margin: 0 0 clamp(1.5rem, 4vw, 2.5rem);
+        opacity: 0.8;
+        color: var(--bodyTextColorWhite);
+        opacity: 0.8;
+      }
+
+      .cs-logo-img {
+        width: 100%;
+        height: auto;
+      }
+
+      .cs-contact {
+        display: flex;
+        flex-direction: column;
+        gap: (32/16rem);
+      }
+
+      .cs-topper {
+        font-size: (16/16rem);
+        margin-bottom: (4/16rem);
+      }
+
+      .cs-contact-link {
+        font-size: (20/16rem);
+        font-weight: 700;
+        line-height: 1.2em;
+        text-decoration: none;
+        color: var(--bodyTextColorWhite);
+      }
+
+      .cs-header {
+        font-size: (25/16rem);
+        font-weight: 700;
+        line-height: 1.5em;
+        /* 16px - 24px */
+        margin: 0 0 clamp(1rem, 4vw, 1.5rem) 0;
+        color: var(--bodyTextColorWhite);
+        display: block;
+        position: relative;
+      }
+
+      .cs-ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: (12/16rem);
+      }
+
+      .cs-li {
+        list-style: none;
+      }
+
+      .cs-link {
+        font-size: (16/16rem);
+        line-height: 1.5em;
+        text-align: left;
+        text-decoration: none;
+        color: var(--bodyTextColorWhite);
+        opacity: 0.8;
+        display: inline-flex;
+        align-items: flex-start;
+        gap: (8/16rem);
+        transition: color 0.3s;
+
+        &:hover {
+          color: var(--primary);
+        }
+      }
+
+      .cs-bottom {
+        width: 100%;
+        max-width: (1280/16rem);
+        /* 60px - 80px */
+        margin: clamp(3.75rem, 7vw, 5rem) auto 0;
+        padding-top: (24/16rem);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        display: flex;
+        flex-wrap: wrap;
+        gap: (12/16rem);
+      }
+
+      .cs-credit,
+      .cs-bottom-link,
+      .cs-credit-link {
+        font-size: (16/16rem);
+        line-height: 1.5em;
+        text-decoration: none;
+        color: var(--bodyTextColorWhite);
+        opacity: 0.8;
+      }
+
+      .cs-credit {
+        width: 100%;
+      }
+
+      .cs-credit-link {
+        font-size: (16/16rem);
+        line-height: 1.5em;
+        text-decoration: none;
+        width: auto;
+        margin: 0;
+        display: inline-block;
+        position: relative;
+
+        &:hover {
+          color: var(--primary);
+        }
+      }
+
+      .cs-bottom-links {
+        width: 100%;
+        display: flex;
+      }
+
+      .cs-bottom-link {
+        display: flex;
+        align-items: center;
+
+        &:hover {
+          color: var(--primary);
+        }
+
+        &:last-of-type {
+          &:before {
+            /* separator */
+            content: "";
+            width: 1px;
+            height: (14/16rem);
+            margin: 0 (12/16rem);
+            background: currentColor;
+            opacity: 1;
+            display: block;
+          }
+        }
+      }
+
+      .cs-table {
+        width: 100%;
+        background-color: #1d1c1c;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-top: 4px solid var(--primary);
+        height: fit-content;
+
+        tr {
+          font-size: (16/16rem);
+          font-weight: 400;
+          line-height: 1.5em;
+          padding: (16/16rem) (24/16rem);
+          color: var(--bodyTextColorWhite);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+          display: flex;
+          justify-content: space-between;
+
+          /* last table row shouldn't have border - the outer table's border-bottom is used instead */
+          &:last-of-type {
+            border: none;
+          }
+        }
+
+        th,
+        td {
+          font-size: (16/16rem);
+          font-weight: 400;
+          line-height: 1.5em;
+          color: var(--bodyTextColorWhite);
+        }
+
+        td {
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48rem) {
+    #cs-footer-1782 {
+      .cs-container {
+        max-width: (1280/16rem);
+        grid-template-columns: repeat(12, 1fr);
+      }
+
+      .cs-logo-group {
+        grid-column: span 12;
+      }
+
+      .cs-ul-wrapper {
+        grid-column: span 3;
+      }
+
+      .cs-contact {
+        flex-direction: row;
+      }
+
+      .cs-table {
+        grid-column: span 12;
+      }
+
+      .cs-bottom {
+        justify-content: space-between;
+        flex-wrap: nowrap;
+      }
+
+      .cs-credit {
+        text-align: left;
+      }
+
+      .cs-bottom-links {
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  /* Small Desktop - 1024px */
+  @media only screen and (min-width: 64rem) {
+    #cs-footer-1782 {
+      .cs-logo-group {
+        grid-column: 1 / 6;
+      }
+
+      .cs-contact {
+        flex-direction: column;
+      }
+
+      .cs-ul-wrapper {
+        justify-self: end;
+
+        &:first-of-type {
+          grid-column: 8 / 10;
+        }
+
+        &:last-child {
+          grid-column: 11 / 13;
+        }
+      }
+    }
+  }
+
+  /* Large Desktop - 1300px */
+  @media only screen and (min-width: 81.25rem) {
+    #cs-footer-1782 {
+      .cs-logo-group {
+        grid-column: span 4;
+      }
+
+      .cs-ul-wrapper {
+        grid-column: span 2;
+        justify-self: start;
+      }
+
+      .cs-table {
+        grid-column: span 4;
+      }
+    }
+  }
+</style>
