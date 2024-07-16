@@ -24,7 +24,10 @@ const {
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
-    <meta name="keywords" content="" />
+    <meta
+      name="keywords"
+      content="Handyman in Boise, Handyman in Nampa, Handyman in Caldwell, Handyman in Eagle, Handyman in Meridian, Home Renovation Services, Handyman Services, Painting services, Drywall repair, Painter, Remodeling, General Contractor"
+    />
     <link
       rel="canonical"
       href={`https://${client.domain}${Astro.url.pathname}`}
@@ -38,10 +41,10 @@ const {
       property="og:url"
       content={`https://${client.domain}${Astro.url.pathname}`}
     />
-    <meta property="og:image" content="/assets/images/logo-small.png" />
+    <meta property="og:image" content="/assets/images/HDR-logo.jpeg" />
     <meta
       property="og:image:secure_url"
-      content="/assets/images/logo-small.png"
+      content="/assets/images/HDR-logo.jpeg"
     />
 
     <!--Favicons-->
@@ -62,18 +65,21 @@ const {
       sizes="16x16"
       href="/assets/favicons/favicon-16x16.png"
     />
-    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+    <!-- <link rel="manifest" href="/assets/favicons/site.webmanifest" /> -->
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
-
-    <!-- Preloads -->
-    <link rel="preload" as="image" href="/assets/svgs/logo-white.svg" />
 
     <!-- Preload an image - tag not rendered if preloadImg is blank to stop console errors -->
     {preloadImg !== "" && <link rel="preload" as="image" href={preloadImg} />}
 
     <!-- Sitewide Scripts -->
-    <script defer src="/assets/js/nav.js"></script>
+    <script defer is:inline src="/assets/js/nav.js"></script>
+
+    <!-- Analytics Script -->
+    <script
+      async
+      src="https://analytics.extensiblmedia.com/script.js"
+      data-website-id="26204459-05dd-4e85-aecf-0a8acbe25b22"></script>
 
     <!--For home page, use service keywords for the title, including location for SEO.
             Other pages should just include the page name.
