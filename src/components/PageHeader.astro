@@ -1,6 +1,5 @@
 ---
-const { imageUrl, heading } = Astro.props;
-console.log(imageUrl);
+const { imageUrl, heading, alt = "Page Heading" } = Astro.props;
 ---
 
 <!-- ============================================ --><!--                   Banner                     --><!-- ============================================ -->
@@ -21,7 +20,7 @@ console.log(imageUrl);
     <img
       decoding="async"
       src={imageUrl.desktop}
-      alt="people laughing"
+      alt={alt}
       width="1280"
       height="568"
       aria-hidden="true"

@@ -6,190 +6,616 @@ import BaseLayout from "src/layouts/BaseLayout.astro";
 import FAQ from "@components/FAQ.astro";
 ---
 
-<BaseLayout title="Our Recent Work">
+<BaseLayout
+  title="Our Recent Work"
+  description="See some of our most reent projects and results for our happy customers."
+>
   <PageHeader
+    alt="Man Cutting luumber with a saw"
     heading="See Our Work"
     imageUrl={{
       mobile:
-        "https://res.cloudinary.com/dxvvbtwxg/image/upload/v1716587800/Handyman_Greyson_Joralemon_2_ecuwkg.webp",
+        "https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1716587800/Handyman_Greyson_Joralemon_2_ecuwkg.webp",
       desktop:
-        "https://res.cloudinary.com/dxvvbtwxg/image/upload/v1716587759/Handyman_Greyson_Joralemon_1_msy6yd.webp",
+        "https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1716587759/Handyman_Greyson_Joralemon_1_msy6yd.webp",
     }}
   />
   <!-- ============================================ -->
   <!--                   Gallery                    -->
   <!-- ============================================ -->
 
-  <section id="gallery-1086">
+  <section id="gallery-406">
     <div class="cs-container">
       <div class="cs-content">
-        <span class="cs-topper">Service</span>
-        <h2 class="cs-title">Our Gallery</h2>
+        <span class="cs-topper">Our Portfolio</span>
+        <h2 class="cs-title">Check Out Some of Our Latest Work</h2>
+        <div class="cs-button-group">
+          <button class="cs-button" data-filter="renovations">
+            Renovations
+          </button>
+          <button class="cs-button" data-filter="framing"> Framing </button>
+          <button class="cs-button" data-filter="drywall">
+            Painting & Drywall
+          </button>
+          <button class="cs-button" data-filter="additions"> Additions </button>
+        </div>
       </div>
-      <div class="cs-image-group">
-        <picture class="cs-picture cs-picture1">
-          <!--Mobile Image-->
-          <source
-            media="(max-width: 600px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic1.jpg"
-          />
-          <!--Tablet and above Image-->
-          <source
-            media="(min-width: 601px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic1.jpg"
-          />
-          <img
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic1.jpg"
-            alt="mechaninc"
-            width="345"
-            height="345"
-          />
-        </picture>
-        <picture class="cs-picture cs-picture2">
-          <!--Mobile Image-->
-          <source
-            media="(max-width: 600px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic1.jpg"
-          />
-          <!--Tablet and above Image-->
-          <source
-            media="(min-width: 601px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic1.jpg"
-          />
-          <img
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic1.jpg"
-            alt="mechaninc"
-            width="345"
-            height="345"
-          />
-        </picture>
-        <picture class="cs-picture cs-picture3">
-          <!--Mobile Image-->
-          <source
-            media="(max-width: 600px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic1.jpg"
-          />
-          <!--Tablet and above Image-->
-          <source
-            media="(min-width: 601px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic1.jpg"
-          />
-          <img
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic1.jpg"
-            alt="mechaninc"
-            width="345"
-            height="345"
-          />
-        </picture>
-        <picture class="cs-picture cs-picture4">
-          <!--Mobile Image-->
-          <source
-            media="(max-width: 600px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic1.jpg"
-          />
-          <!--Tablet and above Image-->
-          <source
-            media="(min-width: 601px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic1.jpg"
-          />
-          <img
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic1.jpg"
-            alt="mechaninc"
-            width="345"
-            height="345"
-          />
-        </picture>
-        <picture class="cs-picture cs-picture5">
-          <!--Mobile Image-->
-          <source
-            media="(max-width: 600px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic1.jpg"
-          />
-          <!--Tablet and above Image-->
-          <source
-            media="(min-width: 601px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic1.jpg"
-          />
-          <img
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic1.jpg"
-            alt="mechaninc"
-            width="345"
-            height="345"
-          />
-        </picture>
-        <picture class="cs-picture cs-picture6">
-          <!--Mobile Image-->
-          <source
-            media="(max-width: 600px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic1.jpg"
-          />
-          <!--Tablet and above Image-->
-          <source
-            media="(min-width: 601px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic1.jpg"
-          />
-          <img
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic1.jpg"
-            alt="mechaninc"
-            width="345"
-            height="345"
-          />
-        </picture>
-        <picture class="cs-picture cs-picture7">
-          <!--Mobile Image-->
-          <source
-            media="(max-width: 600px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic1.jpg"
-          />
-          <!--Tablet and above Image-->
-          <source
-            media="(min-width: 601px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic1.jpg"
-          />
-          <img
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic1.jpg"
-            alt="mechaninc"
-            width="345"
-            height="345"
-          />
-        </picture>
-        <picture class="cs-picture cs-picture8">
-          <!--Mobile Image-->
-          <source
-            media="(max-width: 600px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic1.jpg"
-          />
-          <!--Tablet and above Image-->
-          <source
-            media="(min-width: 601px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic1.jpg"
-          />
-          <img
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic1.jpg"
-            alt="mechaninc"
-            width="345"
-            height="345"
-          />
-        </picture>
+      <div class="cs-gallery-wrapper">
+        <div class="cs-gallery cs-hidden" data-category="framing">
+          <!--Picture 1-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720824898/Website_photos_IMG_1188_hoognz.jpg"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720824898/Website_photos_IMG_1188_hoognz.jpg"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720824898/Website_photos_IMG_1188_hoognz.jpg"
+              alt="bathroom framing"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!--Picture 2-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720824890/Website_photos_HPUT4651_xysggg.jpg"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720824890/Website_photos_HPUT4651_xysggg.jpg"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720824890/Website_photos_HPUT4651_xysggg.jpg"
+              alt="auxillary wall framing"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!--Picture 3-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720824890/Website_Photos_1185_awlmv5.jpg"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720824890/Website_Photos_1185_awlmv5.jpg"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720824890/Website_Photos_1185_awlmv5.jpg"
+              alt="framing around added pipes outside a main wall"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!--Picture 4-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720824886/Website_photos_Oct_13_1_jep2s2.jpg"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720824886/Website_photos_Oct_13_1_jep2s2.jpg"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720824886/Website_photos_Oct_13_1_jep2s2.jpg"
+              alt="cabinet support framing"
+              width="305"
+              height="400"
+            />
+          </picture>
+        </div>
+        <div class="cs-gallery cs-hidden" data-category="renovations">
+          <!--Picture 1-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720824864/Website_photos_1512_qfblyv.jpg"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720824864/Website_photos_1512_qfblyv.jpg"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720824864/Website_photos_1512_qfblyv.jpg"
+              alt="bathroom tile work"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!--Picture 2-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720824848/Website_Photos_1808_dyqnir.jpg"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720824848/Website_Photos_1808_dyqnir.jpg"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720824848/Website_Photos_1808_dyqnir.jpg"
+              alt="replacing sub floor covering"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!--Picture 3-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720736009/Website_photos_1837_mledln.jpg"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720736009/Website_photos_1837_mledln.jpg"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720736009/Website_photos_1837_mledln.jpg"
+              alt="sub floor covering replacement"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720824848/Website_Photos_1841_za0bxc.jpg"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720824848/Website_Photos_1841_za0bxc.jpg"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720824848/Website_Photos_1841_za0bxc.jpg"
+              alt="more sub floor covery replacement"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!--Picture 4-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720736029/Website_photos_1268_mnbyrb.jpg"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720736029/Website_photos_1268_mnbyrb.jpg"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720736029/Website_photos_1268_mnbyrb.jpg"
+              alt="bathroom sub floor replacement"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720736016/Website_photos_IMG_1284_ce5avo.jpg"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720736016/Website_photos_IMG_1284_ce5avo.jpg"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720736016/Website_photos_IMG_1284_ce5avo.jpg"
+              alt="finished tile after sub floor replacement"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!--Picture 5-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720736027/Website_Photos_1886_ezsar0.jpg"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720736027/Website_Photos_1886_ezsar0.jpg"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720736027/Website_Photos_1886_ezsar0.jpg"
+              alt="fresh hardwood floor installation"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!--Picture 6-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720736024/Website_photos_IMG_1387_zb7dkt.jpg"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720736024/Website_photos_IMG_1387_zb7dkt.jpg"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720736024/Website_photos_IMG_1387_zb7dkt.jpg"
+              alt="foyer remodel"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720736022/Website_Photos_1373_lvq2vt.jpg"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720736022/Website_Photos_1373_lvq2vt.jpg"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720736022/Website_Photos_1373_lvq2vt.jpg"
+              alt="kitchen remodel"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720736020/Website_Photos_IMG_1732_ldsfbu.jpg"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720736020/Website_Photos_IMG_1732_ldsfbu.jpg"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720736020/Website_Photos_IMG_1732_ldsfbu.jpg"
+              alt="hardwood floor replacement in hallway"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720735996/Website_photos_XJGZ2805_f54a2v.jpg"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720735996/Website_photos_XJGZ2805_f54a2v.jpg"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720735996/Website_photos_XJGZ2805_f54a2v.jpg"
+              alt="decorative wall"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720736010/Website_photos_IMG_1726_rdaalq.jpg"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720736010/Website_photos_IMG_1726_rdaalq.jpg"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720736010/Website_photos_IMG_1726_rdaalq.jpg"
+              alt="gallery"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720736029/Website_Photos_1234_jm4ffb.jpg"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720736029/Website_Photos_1234_jm4ffb.jpg"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720736029/Website_Photos_1234_jm4ffb.jpg"
+              alt="floor replacement in elevator before"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1721079815/Website_Photos_1247_oa1mkz.jpg"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1721079815/Website_Photos_1247_oa1mkz.jpg"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1721079815/Website_Photos_1247_oa1mkz.jpg"
+              alt="floor replacement in elevator after"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720824892/Website_photos_May_24_gdfvop.jpg"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720824892/Website_photos_May_24_gdfvop.jpg"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720824892/Website_photos_May_24_gdfvop.jpg"
+              alt="old home exterior renovation"
+              width="305"
+              height="400"
+            />
+          </picture>
+        </div>
+        <!--Gallery 4-->
+        <div class="cs-gallery cs-hidden" data-category="drywall">
+          <!--Picture 1-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720824874/Website_photos_IMG_1071_dorfc3.jpg"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720824874/Website_photos_IMG_1071_dorfc3.jpg"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720824874/Website_photos_IMG_1071_dorfc3.jpg"
+              alt="repairing wall texture behind a toilet"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!--Picture 2-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720824862/Website_photos_IMG_1679_sgf19q.jpg"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720824862/Website_photos_IMG_1679_sgf19q.jpg"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720824862/Website_photos_IMG_1679_sgf19q.jpg"
+              alt="repairing wall texture in bathroom before"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!--Picture 3-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720824861/Website_photos_IMG_1683_ezrxkc.jpg"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720824861/Website_photos_IMG_1683_ezrxkc.jpg"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720824861/Website_photos_IMG_1683_ezrxkc.jpg"
+              alt="repairing wall texture in bathroom after"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!--Picture 4-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720824844/Website_photos_IMG_1774_ss06ph.jpg"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720824844/Website_photos_IMG_1774_ss06ph.jpg"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720824844/Website_photos_IMG_1774_ss06ph.jpg"
+              alt="garage sheetrock and paint replacement before"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!--Picture 5-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720824847/Website_photos_IMG_1845_sgtald.jpg"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720824847/Website_photos_IMG_1845_sgtald.jpg"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720824847/Website_photos_IMG_1845_sgtald.jpg"
+              alt="garage sheetrock and paint replacement after"
+              width="305"
+              height="400"
+            />
+          </picture>
+        </div>
+        <!--Gallery 5-->
+        <div class="cs-gallery cs-hidden" data-category="additions">
+          <!--Picture 1-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720735994/Website_photos_June_19_wwfdfy.jpg"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720735994/Website_photos_June_19_wwfdfy.jpg"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720735994/Website_photos_June_19_wwfdfy.jpg"
+              alt="tying in new patio to existing house before"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!--Picture 2-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720735994/Website_photos_June_20_1_nefci2.jpg"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720735994/Website_photos_June_20_1_nefci2.jpg"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720735994/Website_photos_June_20_1_nefci2.jpg"
+              alt="tying in new patio to existing house after"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!--Picture 3-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720735994/Website_photos_IDBQ5021_drdma9.jpg"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720735994/Website_photos_IDBQ5021_drdma9.jpg"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720735994/Website_photos_IDBQ5021_drdma9.jpg"
+              alt="custom entertainment bar with shelves"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!--Picture 4-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720736002/Website_photos_MOWC5103_dmwlut.jpg"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720736002/Website_photos_MOWC5103_dmwlut.jpg"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720736002/Website_photos_MOWC5103_dmwlut.jpg"
+              alt="custom closet layout"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!--Picture 5-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720736000/Website_photos_June_20_2_hqg7c6.jpg"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720736000/Website_photos_June_20_2_hqg7c6.jpg"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720736000/Website_photos_June_20_2_hqg7c6.jpg"
+              alt="deck awning installation"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!--Picture 6-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720736009/Website_photos_May_6_ywrhns.jpg"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720736009/Website_photos_May_6_ywrhns.jpg"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900/v1720736009/Website_photos_May_6_ywrhns.jpg"
+              alt="covered deck installation"
+              width="305"
+              height="400"
+            />
+          </picture>
+        </div>
       </div>
     </div>
   </section>
+
   <ReviewsPreview />
   <CTA />
   <FAQ />
@@ -202,18 +628,20 @@ import FAQ from "@components/FAQ.astro";
 
   /* Mobile - 360px */
   @media only screen and (min-width: 0rem) {
-    #gallery-1086 {
+    #gallery-406 {
       padding: var(--sectionPadding);
 
       .cs-container {
         width: 100%;
-        max-width: (1280/16rem);
+        /* changes to 955px at desktop */
+        max-width: (955/16rem);
         margin: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
         /* 48px - 64px */
         gap: clamp(3rem, 6vw, 4rem);
+        position: relative;
       }
 
       .cs-content {
@@ -227,135 +655,205 @@ import FAQ from "@components/FAQ.astro";
       }
 
       .cs-title {
+        margin: 0 0 (24/16rem) 0;
+      }
+
+      .cs-button-group {
         margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        row-gap: (8/16rem);
+        column-gap: (32/16rem);
       }
 
-      .cs-image-group {
-        width: 100%;
-        /* changes to 1280px at large desktop */
-        max-width: (784/16rem);
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(20, minmax(9vw, 1fr));
-        /* 16px - 20px */
-        gap: clamp(1rem, 2vw, 1.25rem);
-      }
-
-      .cs-picture {
-        width: 100%;
-        height: 100%;
-        display: block;
-        position: relative;
-
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          position: absolute;
-          top: 0;
-          left: 0;
+      .cs-button {
+        font-size: (16/16rem);
+        line-height: 1.5em;
+        color: var(--bodyTextColor);
+        background-color: transparent;
+        border: none;
+        transition: color 0.3s;
+        &:hover {
+          color: var(--primary);
+          cursor: pointer;
+        }
+        &.cs-active {
+          color: var(--primary);
         }
       }
 
-      .cs-picture1 {
-        grid-column: 1 / span 6;
-        grid-row: span 4;
+      .cs-gallery-wrapper {
+        width: 100%;
+        position: relative;
+        z-index: 1;
       }
 
-      .cs-picture2 {
-        grid-column: 7 / span 6;
-        grid-row: span 5;
+      .cs-gallery {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+        visibility: visible;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        /* 16px - 20px */
+        gap: clamp(1rem, 1.5vw, 1.25rem);
+        transition:
+          transform 0.7s,
+          opacity 0.3s,
+          visibility 0.5s,
+          top 0.3s,
+          left 0.3s;
+        /* makes the transform scaling origin the top left corner, dictates the direction by which the scale transforms animate towards */
+        transform-origin: left top;
+
+        &.cs-hidden {
+          position: absolute;
+          /* by using visibility:hidden instead of display:none, we can see the animations from the opacity and transforms, display:none won't render animations. */
+          visibility: hidden;
+          /* prevents the mouse from interacting with it */
+          pointer-events: none;
+          /* hidden galleries have a 0 opacity, and we animate the opacity to 1 when they become active */
+          opacity: 0;
+          /* this top and left value help control the animation, by setting it to position absolute and left 0, the gallery won't fly off screen to the left, it will stop its position to be at the left edge of the .cs-container (left: 0). Same for the top:0 value, the gallery won't go past that position when it animates */
+          top: 0;
+          left: 0;
+          position: absolute;
+          /* prevents the hidden galleries from overflowing the section, and makes a nice animations to transition to and from */
+          transform: scaleY(0) scaleX(0);
+
+          .cs-image {
+            /* when gallery is hidden, add these styles to the cs-image to animate from when cs-hidden is removed from the .cs-gallery */
+            transform: translateY(2.1875rem);
+            opacity: 0;
+          }
+        }
       }
 
-      .cs-picture3 {
-        grid-column: 1 / span 6;
-        grid-row: 5 / span 6;
-      }
+      .cs-image {
+        width: 100%;
+        aspect-ratio: 1;
+        /* clips the image corners */
+        overflow: hidden;
+        display: block;
+        position: relative;
+        /* when .cs-hidden is removed from the .cs-gallery, reset these values and animate between their hidden styles */
+        transform: translateY(0rem);
+        opacity: 1;
+        transition:
+          opacity 0.6s,
+          transform 0.6s;
 
-      .cs-picture4 {
-        grid-column: 7 / span 6;
-        grid-row: 6 / span 5;
-      }
+        &:nth-of-type(1) {
+          /* these delays stagger the reveal of each image so they all go one after the other and not all at once */
+          transition-delay: 0.15s;
+        }
+        &:nth-of-type(2) {
+          transition-delay: 0.3s;
+        }
+        &:nth-of-type(3) {
+          transition-delay: 0.45s;
+        }
+        &:nth-of-type(4) {
+          transition-delay: 0.6s;
+        }
+        &:nth-of-type(5) {
+          transition-delay: 0.75s;
+        }
+        &:nth-of-type(6) {
+          transition-delay: 0.9s;
+        }
+        &:nth-of-type(7) {
+          transition-delay: 1.05s;
+        }
+        &:nth-of-type(8) {
+          transition-delay: 1.2s;
+        }
 
-      .cs-picture5 {
-        grid-column: 1 / span 6;
-        grid-row: 11 / span 4;
-      }
-
-      .cs-picture6 {
-        grid-column: 7 / span 6;
-        grid-row: 11 / span 5;
-      }
-
-      .cs-picture7 {
-        grid-column: 1 / span 6;
-        grid-row: 15 / span 6;
-      }
-
-      .cs-picture8 {
-        grid-column: 7 / span 6;
-        grid-row: 16 / span 5;
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          /* makes it act like a background image */
+          object-fit: cover;
+        }
       }
     }
   }
 
-  /* Tablet - 768px */
-  @media only screen and (min-width: 48rem) {
-    #gallery-1086 {
-      .cs-image-group {
-        grid-template-rows: repeat(20, minmax(6rem, 1fr));
+  @media only screen and (min-width: 43.5rem) {
+    #gallery-406 {
+      .cs-image {
+        width: 47%;
       }
     }
   }
 
-  /* Large Desktop 1300px */
-  @media only screen and (min-width: 81.25rem) {
-    #gallery-1086 {
-      .cs-image-group {
-        max-width: (1280/16rem);
-        height: (785/16rem);
-        grid-template-rows: repeat(12, 1fr);
+  /* Small Desktop - 1024px */
+  @media only screen and (min-width: 64rem) {
+    #gallery-406 {
+      .cs-container {
+        max-width: (955/16rem);
       }
-
-      .cs-picture1 {
-        grid-column: 1 / span 3;
-        grid-row: 1 / span 7;
-      }
-
-      .cs-picture2 {
-        grid-column: 4 / span 3;
-        grid-row: 1 / span 10;
-      }
-
-      .cs-picture3 {
-        grid-column: 7 / span 3;
-        grid-row: 1 / span 5;
-      }
-
-      .cs-picture4 {
-        grid-column: 10 / span 3;
-        grid-row: 1 / span 7;
-      }
-
-      .cs-picture5 {
-        grid-column: 1 / span 3;
-        grid-row: 8 / span 13;
-      }
-
-      .cs-picture6 {
-        grid-column: 4 / span 3;
-        grid-row: 11 / span 10;
-      }
-
-      .cs-picture7 {
-        grid-column: 7 / span 3;
-        grid-row: 6 / span 15;
-      }
-
-      .cs-picture8 {
-        grid-column: 10 / span 3;
-        grid-row: 8 / span 13;
+      .cs-image {
+        width: 32.8%;
+        max-width: (305/16rem);
+        /* 300px - 400px */
+        height: clamp(18.75rem, 30vw, 25rem);
+        aspect-ratio: 1;
       }
     }
   }
 </style>
+
+<script>
+  class CS_GalleryFilter {
+    filtersSelector = ".cs-button";
+    galleriesSelector = ".cs-gallery";
+    activeClass = "cs-active";
+    hiddenClass = "cs-hidden";
+    $galleries = null;
+    $activeFilter = null;
+
+    constructor() {
+      this.$galleries = document.querySelectorAll(this.galleriesSelector);
+      const $filters = document.querySelectorAll(this.filtersSelector);
+
+      this.onClick($filters[0]);
+
+      for (const $filter of $filters) {
+        $filter.addEventListener("click", () => this.onClick($filter));
+      }
+    }
+
+    onClick($filter) {
+      this.filter($filter.dataset.filter);
+
+      const { activeClass } = this;
+
+      this.$activeFilter?.classList.remove(activeClass);
+      $filter.classList.add(activeClass);
+
+      this.$activeFilter = $filter;
+    }
+
+    filter(filter) {
+      const showAll = filter == "all";
+      const { hiddenClass } = this;
+
+      for (const $gallery of this.$galleries) {
+        const show = showAll || $gallery.dataset.category == filter;
+        $gallery.classList.toggle(hiddenClass, !show);
+      }
+    }
+  }
+
+  new CS_GalleryFilter();
+</script>

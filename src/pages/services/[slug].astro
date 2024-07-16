@@ -37,10 +37,7 @@ const { Content } = await entry.render();
 
     <!-- Background Image -->
     <picture class="cs-background">
-      <source
-        media="(max-width: 600px)"
-        srcset={entry.data.heroImage.mobile}
-      />
+      <source media="(max-width: 600px)" srcset={entry.data.heroImage.mobile} />
       <source
         media="(min-width: 601px)"
         srcset={entry.data.heroImage.desktop}
@@ -48,7 +45,7 @@ const { Content } = await entry.render();
       <img
         decoding="async"
         src={entry.data.heroImage.desktop}
-        alt="kitchen"
+        alt={entry.data.heroImage.alt}
         width="2250"
         height="1500"
         aria-hidden="true"
@@ -81,7 +78,7 @@ const { Content } = await entry.render();
         </article>
       </div>
       <div class="left-aside">
-        <di class="services-wrapper">
+        <div class="services-wrapper">
           <p class="services-heading">More Services</p>
           {
             allServices.map((service) => (
@@ -92,28 +89,7 @@ const { Content } = await entry.render();
               </div>
             ))
           }
-        </di>
-        <!--Top Picture-->
-        <picture class="cs-picture">
-          <!--Mobile Image-->
-          <source
-            media="(max-width: 600px)"
-            srcset={entry.data.asideImage}
-          />
-          <!--Tablet and above Image-->
-          <source
-            media="(min-width: 601px)"
-            srcset={entry.data.asideImage}
-          />
-          <img
-            decoding="async"
-            src={entry.data.asideImage}
-            alt="person"
-            width="542"
-            height="520"
-            aria-hidden="true"
-          />
-        </picture>
+        </div>
       </div>
     </div>
   </section>
@@ -196,7 +172,7 @@ const { Content } = await entry.render();
         position: relative;
 
         // &:after {
-          /* Divider Line */
+        /* Divider Line */
         //   content: "";
         //   width: (100/16rem);
         //   height: (8/16rem);

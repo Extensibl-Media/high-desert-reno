@@ -3,6 +3,7 @@ import PageHeader from "@components/PageHeader.astro";
 import BaseLayout from "src/layouts/BaseLayout.astro";
 import CTA from "@components/CTA.astro";
 import FAQ from "@components/FAQ.astro";
+import clientData from "@data/clientData.json";
 ---
 
 <BaseLayout
@@ -10,6 +11,7 @@ import FAQ from "@components/FAQ.astro";
   preloadImg="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1715724751/gilh8bqrxnuwxtg32mpn.webp"
 >
   <PageHeader
+    alt="Man on Phone"
     heading="Contact Us"
     imageUrl={{
       mobile:
@@ -42,9 +44,8 @@ import FAQ from "@components/FAQ.astro";
             </picture>
             <div class="cs-flex-group">
               <span class="cs-header">Phone</span>
-              <a href="tel:888-4565-789
-                        " class="cs-link"
-                >+1 (888) 4565 789
+              <a href={`tel:${clientData.phoneForTel}`} class="cs-link"
+                >{clientData.phoneFormatted}
               </a>
             </div>
           </li>
@@ -62,33 +63,21 @@ import FAQ from "@components/FAQ.astro";
             </picture>
             <div class="cs-flex-group">
               <span class="cs-header">Email</span>
-              <a href="mailto:Email@stitch.com" class="cs-link"
-                >Email@stitch.com</a
+              <a href={`mailto:${clientData.email}`} class="cs-link"
+                >{clientData.email}</a
               >
             </div>
           </li>
-          <!-- <li class="cs-li">
-            <picture class="cs-icon-wrapper">
-              <img
-                aria-hidden="true"
-                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/pin-76.svg"
-                alt="address icon"
-                class="cs-icon"
-                width="40"
-                height="40"
-                decoding="async"
-              />
-            </picture>
-            <div class="cs-flex-group">
-              <span class="cs-header">Address</span>
-              <span class="">2553 Woodbridge Lane, Boston Ware 120</span
-              >
-            </div>
-          </li> -->
         </ul>
       </div>
       <!--Form-->
-      <form class="cs-form" id="cs-form-1403" name="Contact Form" method="post">
+      <form
+        class="cs-form"
+        id="cs-form-1403"
+        name="Contact Form"
+        action="https://api.web3forms.com/submit"
+        method="POST"
+      >
         <h3 class="cs-h3">Make Appointment</h3>
         <label class="cs-label">
           Name
@@ -132,6 +121,22 @@ import FAQ from "@components/FAQ.astro";
             id="message-1403"
             placeholder="Write message..."></textarea>
         </label>
+        <input
+          type="hidden"
+          name="access_key"
+          value="f599e47c-0776-4807-8352-856a536cd419"
+        />
+        <input
+          type="checkbox"
+          name="botcheck"
+          class="hidden"
+          style="display: none;"
+        />
+        <input
+          type="hidden"
+          name="redirect"
+          value="https://highdesertrenovations.com/success"
+        />
         <button class="cs-button-solid cs-submit" type="submit"
           >Send Message</button
         >
@@ -634,28 +639,34 @@ import FAQ from "@components/FAQ.astro";
         gap: (4/16rem);
       }
 
-      .cs-input {
+      .cs-input,
+      .cs-textarea {
         font-size: (16/16rem);
         width: 100%;
-        height: (56/16rem);
-        padding: 0;
-        padding-left: (24/16rem);
-        color: var(--headerColor);
-        background-color: #f7f7f7;
-        border: none;
-        /* prevents padding from adding to height and width */
+        height: (64/16rem);
+        margin-top: (4/16rem);
+        padding-left: (20/16rem);
+        /* set transparent border so on hover border doesn't make it glitch */
+        border: 1px solid transparent;
+        border-bottom: 1px solid #b4b2c7;
+        /* prevents border & padding from affecting height */
         box-sizing: border-box;
+        transition: border 0.3s;
+
+        &:hover {
+          border: 1px solid var(--primary);
+        }
+
         &::placeholder {
           color: #7d799c;
-          opacity: 0.6;
         }
       }
 
       .cs-textarea {
-        min-height: (120/16rem);
-        padding-top: (24/16rem);
-        margin-bottom: (12/16rem);
         font-family: inherit;
+        margin: 0;
+        padding-top: (20/16rem);
+        min-height: (120/16rem);
       }
 
       .cs-button-solid {

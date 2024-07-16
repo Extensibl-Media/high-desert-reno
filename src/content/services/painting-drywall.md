@@ -5,6 +5,7 @@ heading: Professional Painting and Drywall Services in the Treasure Valley
 heroImage:
   mobile: https://res.cloudinary.com/dxvvbtwxg/image/upload/v1717045828/Painter_House_Foil_reenxa.jpg
   desktop: https://res.cloudinary.com/dxvvbtwxg/image/upload/v1717045828/Painter_House_Foil_reenxa.jpg
+  alt: man painting exterior of a home
 asideImage: https://res.cloudinary.com/dxvvbtwxg/image/upload/v1717044178/Prepping_Wall_for_Painting_by55sv.webp
 ---
 

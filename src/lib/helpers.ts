@@ -7,3 +7,12 @@ export function slugify(str: string) {
     .replace(/-+/g, "-"); // remove consecutive hyphens
   return str;
 }
+
+export function splitArray<T>(arr: T[], chunks: number): T[][] {
+  return Array.from({ length: chunks }, (_, i) =>
+    arr.slice(
+      Math.floor((i * arr.length) / chunks),
+      Math.floor(((i + 1) * arr.length) / chunks)
+    )
+  );
+}

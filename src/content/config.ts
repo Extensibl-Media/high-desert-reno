@@ -17,6 +17,7 @@ const ServicesCollection = defineCollection({
     heroImage: z.object({
       mobile: z.string(),
       desktop: z.string(),
+      alt: z.string(),
     }),
     asideImage: z.string(),
   }),

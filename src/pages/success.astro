@@ -1,0 +1,68 @@
+---
+import BaseLayout from "src/layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Form Submitted Successfully"
+  description="Thank you for inquiring about our services!"
+>
+  <div class="success">
+    <div class="cs-container">
+      <h1 class="cs-title">Thanks For Your Inquiry!</h1>
+      <p class="cs-text">
+        Someone will be in touch shortly to schedule the best time to speak with
+        you about your submission.
+      </p>
+    </div>
+  </div>
+</BaseLayout>
+
+<style lang="less">
+  @media only screen and (min-width: 0rem) {
+    .success {
+      padding: var(--sectionPadding);
+      text-align: center;
+
+      .cs-container {
+        width: 100%;
+        /* changes to 1280px at tablet */
+        max-width: (584/16rem);
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+      }
+    }
+
+    .cs-title {
+      font-size: var(--headerFontSize);
+      font-weight: 900;
+      line-height: 1.2em;
+      text-align: inherit;
+      max-width: (700/16rem);
+      margin: 0 0 (16/16rem) 0;
+      color: var(--headerColor);
+      position: relative;
+    }
+
+    .cs-text {
+      font-size: var(--bodyFontSize);
+      line-height: 1.5em;
+      text-align: inherit;
+      width: 100%;
+      max-width: (650/16rem);
+      margin: 0;
+      color: var(--bodyTextColor);
+    }
+  }
+
+  @media only screen and (min-width: 48rem) {
+    .success {
+      .cs-container {
+        max-width: (1280/16rem);
+      }
+    }
+  }
+</style>

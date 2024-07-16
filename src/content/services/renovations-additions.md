@@ -5,6 +5,7 @@ heading: Your Trusted Home Renovation & Additions Professionals in the Treasure 
 heroImage:
   mobile: https://res.cloudinary.com/dxvvbtwxg/image/upload/v1717044178/Kitchen_Counter_Stools_b8brry.webp
   desktop: https://res.cloudinary.com/dxvvbtwxg/image/upload/v1717044178/Kitchen_Counter_Stools_b8brry.webp
+  alt: Modern, Rustic Kitchen
 asideImage: https://res.cloudinary.com/dxvvbtwxg/image/upload/v1717044524/Bathroom_Interior_Photo_s7yprg.jpg
 ---
 

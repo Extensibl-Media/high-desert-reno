@@ -8,14 +8,14 @@ import client from "@data/clientData.json";
     <div class="cs-content">
       <span class="cs-topper">Here To Help</span>
       <h2 class="cs-title">Contact Us</h2>
-      <p class="cs-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
-        enim risus lorem diam. Viverra egestas penatibus feugiat vitae in
-        dignissim.
-      </p>
     </div>
     <!-- Form -->
-    <form id="cs-form-242" name="Contact Form" method="post">
+    <form
+      id="cs-form-242"
+      name="Contact Form"
+      action="https://api.web3forms.com/submit"
+      method="POST"
+    >
       <label class="cs-label">
         Name
         <input
@@ -68,6 +68,23 @@ import client from "@data/clientData.json";
           id="message-242"
           placeholder="Hello, I’m interested in..."></textarea>
       </label>
+      <input
+        type="hidden"
+        name="access_key"
+        value="f599e47c-0776-4807-8352-856a536cd419"
+      />
+      <input
+        type="checkbox"
+        name="botcheck"
+        class="hidden"
+        style="display: none;"
+      />
+      <input
+        type="hidden"
+        name="redirect"
+        value="https://highdesertrenovations.com/success"
+      />
+
       <button class="cs-button-solid cs-submit" type="submit"
         >Submit Message Now</button
       >

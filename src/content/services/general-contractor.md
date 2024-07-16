@@ -5,6 +5,7 @@ heading: Reliable General Contractors in the Treasure Valley
 heroImage:
   mobile: https://res.cloudinary.com/dxvvbtwxg/image/upload/v1717044849/Architect_Building_Joy_1_anpthi.jpg
   desktop: https://res.cloudinary.com/dxvvbtwxg/image/upload/v1717044849/Architect_Building_Joy_1_anpthi.jpg
+  alt: Man walking towards house with tools in hand
 asideImage: https://res.cloudinary.com/dxvvbtwxg/image/upload/v1717044525/Men_standing_construction_wmjrge.jpg
 ---
 
@@ -32,7 +33,7 @@ Expand your living space with our expertly managed home addition projects. Wheth
 
 Effective project management is crucial for the success of any construction project. Our experienced project managers coordinate all aspects of your project, from scheduling and budgeting to quality control and subcontractor management. We keep you informed and involved every step of the way.
 
-![Contractors having a conversation](https://res.cloudinary.com/dxvvbtwxg/image/upload/v1716417985/Construction_Team_pp5i69.jpg)
+![Contractors having a conversation](https://res.cloudinary.com/dxvvbtwxg/image/upload/v1720737069/Website_photos_1077_vtdprb.jpg)
 
 ## Why Choose High Desert Renovations as Your General Contractor?
 

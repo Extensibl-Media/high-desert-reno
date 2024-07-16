@@ -5,7 +5,8 @@ heading: Expert Residential Framing Services in the Treasure Valley
 heroImage:
   mobile: https://res.cloudinary.com/dxvvbtwxg/image/upload/v1716325573/Ernie_Journeys_from_Unsplash_1_hgcmyt.jpg
   desktop: https://res.cloudinary.com/dxvvbtwxg/image/upload/v1716325573/Ernie_Journeys_from_Unsplash_1_hgcmyt.jpg
-asideImage: https://res.cloudinary.com/dxvvbtwxg/image/upload/v1717044178/Black_gloves_person_gklcaq.webp
+  alt: Framing a 2 story house
+asideImage: https://res.cloudinary.com/dxvvbtwxg/image/upload/c_crop,w_600,h_1067,ar_9:16/v1720736009/Website_photos_1837_mledln.jpg
 ---
 
 ## Building Strong Foundations with High Desert Renovations
@@ -28,7 +29,7 @@ Expanding your home? Our framing services for home additions provide the structu
 
 Every home is unique, and our custom framing services reflect that. We tailor our framing solutions to meet your specific needs, whether it's for a custom-built home, a unique architectural design, or special structural requirements. Our team is adept at handling complex framing projects with precision.
 
-![Framed wall studs](https://res.cloudinary.com/dxvvbtwxg/image/upload/v1717044178/Wooden_frame_blue_sky_ag7tgf.webp)
+![Framed wall studs](https://res.cloudinary.com/dxvvbtwxg/image/upload/v1720735983/Website_photos_Sept_07_whogck.jpg)
 
 ## Why Choose High Desert Renovations for Residential Framing?
 
