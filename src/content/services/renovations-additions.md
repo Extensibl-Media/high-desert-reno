@@ -3,10 +3,10 @@ name: Renovations & Additions
 slug: renovations-additions
 heading: Your Trusted Home Renovation & Additions Professionals in the Treasure Valley
 heroImage:
-  mobile: https://res.cloudinary.com/dxvvbtwxg/image/upload/v1717044178/Kitchen_Counter_Stools_b8brry.webp
-  desktop: https://res.cloudinary.com/dxvvbtwxg/image/upload/v1717044178/Kitchen_Counter_Stools_b8brry.webp
+  mobile: https://res.cloudinary.com/dxvvbtwxg/image/upload/v1717044178/High%20Desert%20Renovation/Kitchen_Counter_Stools_b8brry.webp
+  desktop: https://res.cloudinary.com/dxvvbtwxg/image/upload/v1717044178/High%20Desert%20Renovation/Kitchen_Counter_Stools_b8brry.webp
   alt: Modern, Rustic Kitchen
-asideImage: https://res.cloudinary.com/dxvvbtwxg/image/upload/v1717044524/Bathroom_Interior_Photo_s7yprg.jpg
+asideImage: https://res.cloudinary.com/dxvvbtwxg/image/upload/v1717044524/High%20Desert%20Renovation/Bathroom_Interior_Photo_s7yprg.jpg
 ---
 
 ## Transform Your Home with High Desert Renovations
@@ -15,7 +15,7 @@ High Desert Renovations is your go-to expert for home renovations, remodeling, a
 
 ## Comprehensive Home Renovation Services
 
-![newly remodeled kitchen](https://res.cloudinary.com/dxvvbtwxg/image/upload/v1716417985/Gray_steel_refrigerator_dgwmwj.jpg)
+![newly remodeled kitchen](https://res.cloudinary.com/dxvvbtwxg/image/upload/v1716417985/High%20Desert%20Renovation/Gray_steel_refrigerator_dgwmwj.jpg)
 
 ### Kitchen Remodeling
 
@@ -31,7 +31,7 @@ Need more space? Our room addition services provide the extra square footage you
 
 ## Why Choose High Desert Renovations for Your Home Remodel?
 
-![man marking board for cutting](https://res.cloudinary.com/dxvvbtwxg/image/upload/v1716328348/Circular_saw_carpenter_thijru.webp)
+![man marking board for cutting](https://res.cloudinary.com/dxvvbtwxg/image/upload/v1716328348/High%20Desert%20Renovation/Circular_saw_carpenter_thijru.webp)
 
 ### Expertise and Experience
 

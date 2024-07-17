@@ -3,10 +3,10 @@ name: General Contractor
 slug: general-contractor
 heading: Reliable General Contractors in the Treasure Valley
 heroImage:
-  mobile: https://res.cloudinary.com/dxvvbtwxg/image/upload/v1717044849/Architect_Building_Joy_1_anpthi.jpg
-  desktop: https://res.cloudinary.com/dxvvbtwxg/image/upload/v1717044849/Architect_Building_Joy_1_anpthi.jpg
+  mobile: https://res.cloudinary.com/dxvvbtwxg/image/upload/v1717044849/High%20Desert%20Renovation/Architect_Building_Joy_1_anpthi.jpg
+  desktop: https://res.cloudinary.com/dxvvbtwxg/image/upload/v1717044849/High%20Desert%20Renovation/Architect_Building_Joy_1_anpthi.jpg
   alt: Man walking towards house with tools in hand
-asideImage: https://res.cloudinary.com/dxvvbtwxg/image/upload/v1717044525/Men_standing_construction_wmjrge.jpg
+asideImage: https://res.cloudinary.com/dxvvbtwxg/image/upload/v1717044525/High%20Desert%20Renovation/Men_standing_construction_wmjrge.jpg
 ---
 
 ## Your One-Stop Solution for Construction and Renovation
@@ -15,7 +15,7 @@ High Desert Renovations is your reliable general contractor, offering comprehens
 
 ## Comprehensive General Contractor Services
 
-![Man working on a roof construction](https://res.cloudinary.com/dxvvbtwxg/image/upload/v1716590484/Handyman_Gabriel_Alenius_1_xrb0vs.webp)
+![Man working on a roof construction](https://res.cloudinary.com/dxvvbtwxg/image/upload/v1716590484/High%20Desert%20Renovation/Handyman_Gabriel_Alenius_1_xrb0vs.webp)
 
 ### New Construction
 
@@ -33,7 +33,7 @@ Expand your living space with our expertly managed home addition projects. Wheth
 
 Effective project management is crucial for the success of any construction project. Our experienced project managers coordinate all aspects of your project, from scheduling and budgeting to quality control and subcontractor management. We keep you informed and involved every step of the way.
 
-![Contractors having a conversation](https://res.cloudinary.com/dxvvbtwxg/image/upload/v1720737069/Website_photos_1077_vtdprb.jpg)
+![Contractors having a conversation](https://res.cloudinary.com/dxvvbtwxg/image/upload/v1720737069/High%20Desert%20Renovation/Website_photos_1077_vtdprb.jpg)
 
 ## Why Choose High Desert Renovations as Your General Contractor?
 

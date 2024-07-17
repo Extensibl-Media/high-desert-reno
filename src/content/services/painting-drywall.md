@@ -3,10 +3,10 @@ name: Painting & Drywall
 slug: painting-drywall
 heading: Professional Painting and Drywall Services in the Treasure Valley
 heroImage:
-  mobile: https://res.cloudinary.com/dxvvbtwxg/image/upload/v1717045828/Painter_House_Foil_reenxa.jpg
-  desktop: https://res.cloudinary.com/dxvvbtwxg/image/upload/v1717045828/Painter_House_Foil_reenxa.jpg
+  mobile: https://res.cloudinary.com/dxvvbtwxg/image/upload/v1717045828/High%20Desert%20Renovation/Painter_House_Foil_reenxa.jpg
+  desktop: https://res.cloudinary.com/dxvvbtwxg/image/upload/v1717045828/High%20Desert%20Renovation/Painter_House_Foil_reenxa.jpg
   alt: man painting exterior of a home
-asideImage: https://res.cloudinary.com/dxvvbtwxg/image/upload/v1717044178/Prepping_Wall_for_Painting_by55sv.webp
+asideImage: https://res.cloudinary.com/dxvvbtwxg/image/upload/v1717044178/High%20Desert%20Renovation/Prepping_Wall_for_Painting_by55sv.webp
 ---
 
 ## Elevate Your Home’s Aesthetics with High Desert Renovations
@@ -15,7 +15,7 @@ At High Desert Renovations, we provide top-notch painting and drywall services t
 
 ## Comprehensive Painting Services
 
-![man painting with sprayer](https://res.cloudinary.com/dxvvbtwxg/image/upload/v1717044177/Man_in_Gray_Suit_House_Painting_sbf3rr.webp)
+![man painting with sprayer](https://res.cloudinary.com/dxvvbtwxg/image/upload/v1717044177/High%20Desert%20Renovation/Man_in_Gray_Suit_House_Painting_sbf3rr.webp)
 
 ### Interior Painting
 
@@ -32,7 +32,7 @@ Looking for something unique? Our custom painting services include decorative fi
 
 ## Expert Drywall Services
 
-![man sanding drywall](https://res.cloudinary.com/dxvvbtwxg/image/upload/v1717044178/Ceiling_Polishing_xivj7d.webp)
+![man sanding drywall](https://res.cloudinary.com/dxvvbtwxg/image/upload/v1717044178/High%20Desert%20Renovation/Ceiling_Polishing_xivj7d.webp)
 
 ### Drywall Installation
 
